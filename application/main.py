@@ -6,9 +6,8 @@ import os
 
 app = Flask(__name__)
 
-load_dotenv
+load_dotenv()
 
-# MySQL Configuration
 db = mysql.connector.connect(
     host=f"{os.getenv('db_host')}",
     user=f"{os.getenv('db_user')}",
@@ -17,7 +16,6 @@ db = mysql.connector.connect(
 )
 cursor = db.cursor()
 
-# Endpoint to add a visitor's name
 @app.route('/add_visitor', methods=['POST'])
 def add_visitor():
     data = request.get_json()

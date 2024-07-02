@@ -56,3 +56,4 @@ def test_get_visitors(db_connection):
     assert isinstance(visitors, list)
     assert all(isinstance(visitor, dict) for visitor in visitors)
     assert all(key in visitors[0] for key in ['id', 'name', 'visit_time'])
+
