@@ -17,11 +17,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
-1. **Download Ansible:**
-
-   - Choose the appropriate package for your operating system.
-
-2. **Install Ansible:**
+1. **Install Ansible:**
 
    - For **macOS** users, run the following command.
      ```sh
@@ -33,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
      sudo apt install ansible -y
      ```
 
-3. **Verify Installation:**
+2. **Verify Installation:**
 
    - Open a terminal and type:
      ```sh
