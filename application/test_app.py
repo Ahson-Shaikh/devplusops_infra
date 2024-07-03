@@ -26,7 +26,7 @@ def test_add_visitor(db_connection):
         'name': 'Shahrukh Shaikh'
     }
 
-    url = 'http://3.149.249.63:5000/add_visitor'
+    url = f'http://{os.getenv('remote_machine_ip')}:5000/add_visitor'
 
     
     response = requests.post(url, json=visitor_data)
@@ -46,7 +46,7 @@ def test_add_visitor(db_connection):
 
 def test_get_visitors(db_connection):
     
-    url = 'http://3.149.249.63:5000/visitors'
+    url = f'http://{os.getenv('remote_machine_ip')}:5000/visitors'
 
     response = requests.get(url)
 
