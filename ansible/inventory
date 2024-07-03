@@ -1,5 +1,5 @@
 [web]
-3.149.249.63 
+<your-remote-server>
 
 [web:vars]
 ansible_user=ubuntu
