@@ -53,7 +53,7 @@ Before you begin, ensure you have met the following requirements:
 
 3. **Run the Playbook:**
 
-   - Apply the changes required to reach the desired state of the configuration:
+   - Run the playbook while using the inventory.
      ```sh
-     terraform apply
+     ansible-playbook -i hosts playbook.yml
      ```
