@@ -55,5 +55,5 @@ Before you begin, ensure you have met the following requirements:
 
    - Run the playbook while using the inventory.
      ```sh
-     ansible-playbook -i hosts playbook.yml
+     ansible-playbook -i inventory playbook.yml
      ```
